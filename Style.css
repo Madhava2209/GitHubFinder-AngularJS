@@ -1,0 +1,34 @@
+.header{
+    background-color: lightgrey;
+    border: 1px solid white;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+}
+.footer{
+    background-color: lightgrey;
+    border: 1px solid white;
+    width: 800px;
+    height: 50px;
+    text-align: center;
+}
+.left-menu{
+    background-color: lightgrey;
+    border: 1px solid white;
+    width: 150px;
+    height: 500px;
+}
+.right-menu{
+    background-color: lightgrey;
+    border: 1px solid white;
+    width: 650px;
+    height: 500px;
+}
+a{
+    display: block;
+    padding: 5px;
+}
+.active-state{
+    background-color: black;
+    color: white;
+}

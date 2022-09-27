@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gitHubFinderApp">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHUbFinder</title>
+    <base href="/" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.min.js" integrity="sha512-HdDqpFK+5KwK5gZTuViiNt6aw/dBc3d0pUArax73z0fYN8UXiSozGNTo3MFx4pwbBPldf5gaMUq/EqposBQyWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Scripts/scripts.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-menu">
+                <a ui-sref="home" ui-sref-active="active-state" >Home</a>
+                <a ui-sref="project.projectList" ui-sref-active="active-state">GitHubFinder</a>
+                <a ui-sref="employee" ui-sref-active="active-state">TodoList</a>
+            </td>
+            <td class="right-menu">
+                <!-- <ng-view></ng-view> -->
+                <ui-view></ui-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer"><h2>Footer</h2></td>
+        </tr>
+    </table>
+</body>
+</html>
